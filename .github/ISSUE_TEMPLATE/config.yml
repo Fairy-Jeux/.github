@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Server & Web UI Issues (pve-panel)"
+    url: "https://github.com/Fairy-Jeux/pve-panel/issues"
+    about: "Report bugs or request features for the FastAPI backend, AlertEngine, Docker setup, install.sh, or Web UI"
+  - name: "Apple Native App Issues (pve-center-apple)"
+    url: "https://github.com/Fairy-Jeux/pve-center-apple/issues"
+    about: "Report bugs or request features for the Swift 6 / SwiftUI apps on iOS, iPadOS, macOS, and tvOS"
+  - name: "Desktop & Android Client Issues (pve-center-clients)"
+    url: "https://github.com/Fairy-Jeux/pve-center-clients/issues"
+    about: "Report bugs or request features for Windows / Linux (Tauri v2) and Android (Capacitor 8) clients"
+  - name: "Website & Docs Issues (pve-center-website)"
+    url: "https://github.com/Fairy-Jeux/pve-center-website/issues"
+    about: "Report broken links, typos, or VitePress documentation portal improvements"
+  - name: "Security Vulnerability Disclosure"
+    url: "https://github.com/Fairy-Jeux/pve-panel/security/advisories/new"
+    about: "Privately report security vulnerabilities without exposing sensitive details"

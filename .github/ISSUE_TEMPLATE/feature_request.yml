@@ -1,0 +1,42 @@
+name: "Feature or Branding Request"
+description: "Propose an improvement to organization profile docs, SVG branding, templates, or multi-repo automation"
+title: "[Org/.github Feature]: "
+labels: ["enhancement"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Area"
+      options:
+        - "Organization Profile (EN / FR)"
+        - "SVG Vector Branding"
+        - "Issue / PR Templates & Health Files"
+        - "Multi-Repo Automation Script"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem Statement / Motivation"
+      description: "What ecosystem workflow, presentation, or template improvement does this address?"
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: "Proposed Change"
+      description: "Describe the desired layout, SVG asset, template field, or script option."
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: "Alternatives Considered"
+      description: "Any alternative approaches or conventions considered."
+  - type: checkboxes
+    id: contribution
+    attributes:
+      label: "Contribution"
+      options:
+        - label: "I would be interested in submitting a Pull Request for this change."

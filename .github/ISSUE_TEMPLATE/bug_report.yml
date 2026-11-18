@@ -1,0 +1,59 @@
+name: "Bug Report"
+description: "Report an issue with the organization profile, SVG branding, community health templates, or push-all-repos.sh"
+title: "[Org/.github Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue in **PVE Command Center (`.github`)**!
+        For server, Apple client, desktop/Android client, or website issues, please use the repository links in `config.yml`.
+  - type: dropdown
+    id: component
+    attributes:
+      label: "Affected Component"
+      description: "Which part of the .github organization repository is affected?"
+      options:
+        - "Organization Profile (profile/README.md / profile/README.fr.md)"
+        - "Vector Branding (branding/SVG/*.svg)"
+        - "Community Health Files (CONTRIBUTING / SECURITY / SUPPORT / CODE_OF_CONDUCT)"
+        - "Issue / PR Templates (.github/)"
+        - "Automation Script (scripts/push-all-repos.sh)"
+        - "Other"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "What happened?"
+      description: "Clear and concise description of the issue."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "Steps to Reproduce"
+      description: "Commands, browser/theme conditions, or GitHub view steps that reproduce the issue."
+      placeholder: |
+        1. Run ./scripts/push-all-repos.sh --dry-run ...
+        2. Or inspect profile/README.md in GitHub Light/Dark mode
+        3. Observe unexpected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "OS, shell/browser, or GitHub theme details."
+      placeholder: "Example: macOS 15, zsh, Safari Dark Mode, git 2.47"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: "Pre-submission Checklist"
+      options:
+        - label: "I verified this issue belongs to the .github meta-repository rather than pve-panel, pve-center-apple, pve-center-clients, or pve-center-website."
+          required: true
+        - label: "I removed any GITHUB_TOKEN values, secrets, or private URLs from pasted outputs."
+          required: true

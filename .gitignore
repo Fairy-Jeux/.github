@@ -1,0 +1,21 @@
+# Secrets & local environment files
+.env
+.env.*
+!.env.example
+*.p8
+*.pem
+*.key
+
+# Editor & swap files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs & OS cruft
+*.log
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
