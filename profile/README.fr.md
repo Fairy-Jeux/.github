@@ -9,7 +9,7 @@
   </a>
 
   <p>
-    [🇬🇧 English](README.md) | [🇫🇷 Français](README.fr.md)
+    <a href="README.md">🇬🇧 English</a> &nbsp;|&nbsp; <a href="README.fr.md">🇫🇷 Français</a>
   </p>
 
   <p>

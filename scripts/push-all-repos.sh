@@ -204,9 +204,9 @@ for path in target_files:
     updated = repo_pattern.sub(f"https://github.com/{target_owner}", original)
 
     if prev_owner and prev_owner != target_owner:
-        # Update bare org profile links such as https://github.com/<prev_owner>
+        # Update bare org profile links such as https://github.com/<prev_owner> (including backticked URLs)
         org_url_pattern = re.compile(
-            rf"https://github\.com/{re.escape(prev_owner)}(?=(?:[/?#)\s\"']|$))"
+            rf"https://github\.com/{re.escape(prev_owner)}(?=(?:[/?#)\s\"'`]|$))"
         )
         updated = org_url_pattern.sub(f"https://github.com/{target_owner}", updated)
         # Update display labels like [`Fairy-Jeux`] or [`Fairy-Jeux/pve-panel`]
